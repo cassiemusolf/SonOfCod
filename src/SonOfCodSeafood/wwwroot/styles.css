@@ -10,3 +10,22 @@
 .small-nav {
    margin-left: 60%;
 }
+
+.product-img {
+    width: 100%;
+    margin-top: -60px;
+}
+
+.product-title {
+    text-align: center;
+    color: white;
+    margin-top: -200px;
+    font-size: 70px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.small-title {
+    text-align: center;
+    color: cadetblue;
+    font-size: 40px;
+}
