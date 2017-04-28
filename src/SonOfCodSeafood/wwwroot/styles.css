@@ -6,6 +6,11 @@
 .small-nav li {
     list-style-type: none;
     display: inline;
+    padding: 10px;
+}
+
+.small-nav a {
+    color: black;
 }
 
 .small-nav {
@@ -34,6 +39,8 @@
 
 .index-buttons {
     margin-top: 100px;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .about {
@@ -60,4 +67,12 @@
 
 .about-title {
     padding-bottom: 15px;
+}
+
+.about-page {
+    text-align: center;
+}
+
+.welcome-message {
+    padding-bottom: 20px;
 }

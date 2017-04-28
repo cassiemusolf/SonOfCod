@@ -16,15 +16,18 @@
 <div class="container about">
     <h2 class="about-title">THE BEST SEAFOOD | THE BEST SERVICE</h2>
     <h3>Since 1918, Son of Cod Seafood has supplied the highest-quality seafood available in the world to restaurants, hotels, caterers and grocers throughout Seattle and the Northwest area. As the region’s largest supplier of fresh fish, we’re proud to provide our community with an unparalleled selection of seafood that showcases the same passionate dedication to personal service that this multigenerational family company has fostered for nearly a century.</h3>
+    <h2 class="btn btn-default btn-lg">@Html.ActionLink("Learn More About Us", "About")</h2>
 </div>
 
 <div class="container index-buttons">
+    <h2 class="newsletter">FIND OUT THE LATEST IN SEAFOOD NEWS & SON OF COD</h2>
+    <h2><strong>THE NEWSLETTER</strong></h2>
     @if (User.Identity.IsAuthenticated)
     {
-        <p>Hello @User.Identity.Name!</p>
+        <h2 class="welcome-message">Welcome Back, @User.Identity.Name!</h2>
         @using (Html.BeginForm("LogOff", "Account"))
         {
-            <input type="submit" class="btn btn-default" value="Log out" />
+            <input type="submit" class="btn btn-default btn-lg" value="Log out" />
         }
     }
     else
