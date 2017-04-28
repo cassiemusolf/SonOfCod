@@ -30,7 +30,6 @@
     color: white;
     font-size: 40px;
     text-shadow: 2px 2px 2px black;
-
 }
 
 .index-buttons {
@@ -39,8 +38,26 @@
 
 .about {
     text-align: center;
-    margin-top: 60px;
-    border-bottom: 1px solid grey;
-    box-shadow: 0 5px lightgrey;
+    margin-top: 48px;
+    background-color: white;
+    box-shadow: 2px 2px 2px grey;
+    padding: 50px;
+    width: 100%;
 }
 
+.navbar {
+    height: 70px;
+}
+
+.navbar li {
+    margin-top: 10px;
+}
+
+.navbar-brand {
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.about-title {
+    padding-bottom: 15px;
+}
