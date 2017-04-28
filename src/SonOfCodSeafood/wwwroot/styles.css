@@ -1,5 +1,6 @@
 ﻿body {
-
+    background-color: lightgray;
+    margin-top: 10px;
 }
 
 .small-nav li {
@@ -26,6 +27,20 @@
 
 .small-title {
     text-align: center;
-    color: cadetblue;
+    color: white;
     font-size: 40px;
+    text-shadow: 2px 2px 2px black;
+
 }
+
+.index-buttons {
+    margin-top: 100px;
+}
+
+.about {
+    text-align: center;
+    margin-top: 60px;
+    border-bottom: 1px solid grey;
+    box-shadow: 0 5px lightgrey;
+}
+
