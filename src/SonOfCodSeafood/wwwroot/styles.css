@@ -65,6 +65,10 @@
     font-size: 25px;
 }
 
+.navbar-brand a {
+    color: blue;
+}
+
 .about-title {
     padding-bottom: 15px;
 }
@@ -75,4 +79,16 @@
 
 .welcome-message {
     padding-bottom: 20px;
+}
+
+.heading-button {
+    margin-top: 10px;
+}
+
+.form-group {
+    text-align: center;
+}
+
+.register-form {
+    text-align: center;
 }
