@@ -8,6 +8,7 @@
       "version": "1.0.1",
       "type": "platform"
     },
+    "Microsoft.AspNetCore.StaticFiles": "1.0.0",
     "Microsoft.AspNetCore.Diagnostics": "1.0.0",
     "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
     "Microsoft.AspNetCore.Server.Kestrel": "1.0.1",
@@ -19,10 +20,9 @@
     "Microsoft.EntityFrameworkCore": "1.0.0",
     "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0",
     "Microsoft.EntityFrameworkCore.Tools": {
-      "version": "1.0.0-preview2-final",
-      "type": "build"
-    },
-    "Microsoft.AspNetCore.StaticFiles": "1.0.0"
+      "type": "build",
+      "version": "1.0.0-preview2-final"
+    }
   },
   "frameworks": {
     "netcoreapp1.0": {

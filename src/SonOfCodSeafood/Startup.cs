@@ -38,6 +38,7 @@ namespace SonOfCodSeafood
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            
             app.UseIdentity();
             app.UseMvc(routes =>
             {
@@ -45,6 +46,8 @@ namespace SonOfCodSeafood
                     name: "default",
                     template: "{controller=Account}/{action=Index}/{id?}");
             });
+
+            app.UseStaticFiles();
 
             loggerFactory.AddConsole();
 

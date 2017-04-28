@@ -3,24 +3,35 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="~/css/styles.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/styles.css" rel="stylesheet" type="text/css" />
     <title>@ViewBag.Title</title>
 </head>
 <body>
+    <div class="header-top">
+        <ul class="small-nav">
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Purchasing</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Careers</a></li>
+        </ul>
+    </div>
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">WebSiteName</a>
+                <a class="navbar-brand" href="/">Son of Cod Seafood</a>
             </div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Page 1</a></li>
-                <li><a href="#">Page 2</a></li>
+                <li class="active"><a href="/">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">SOCIAL RESPONSIBILITY</a></li>
+                <li><a href="#">NEWS & MEDIA</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="/Account/Register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li><a href="/Account/Login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
         </div>
     </nav>
