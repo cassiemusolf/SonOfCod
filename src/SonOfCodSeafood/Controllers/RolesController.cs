@@ -8,6 +8,7 @@ using System.Security.Claims;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Http;
 
 namespace SonOfCodSeafood.Controllers
 {
@@ -35,7 +36,7 @@ namespace SonOfCodSeafood.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create(Microsoft.AspNetCore.Http.FormCollection collection)
+        public ActionResult Create(FormCollection collection)
         {
             try
             {

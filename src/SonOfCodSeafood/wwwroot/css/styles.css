@@ -1,6 +1,7 @@
 ﻿body {
-    background-color: lightgray;
+    background-color: pink;
     margin-top: 10px;
+
 }
 
 .small-nav li {
@@ -118,4 +119,13 @@
 {
     color: #000;
     background-color: #FFF;
+}
+
+.carousel-index {
+    padding-top: 100px;
+    margin-bottom: 100px !important;
+}
+
+.footer {
+    margin: 50px;
 }

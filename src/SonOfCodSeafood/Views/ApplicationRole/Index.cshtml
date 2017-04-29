@@ -1,0 +1,18 @@
+﻿@model IEnumerable<ApplicationRoleListViewModel>
+@using SonOfCodSeafood.ViewModels
+@using SonOfCodSeafood.Models
+
+
+<div class="users">
+    @if (Model.Any())
+    {
+
+        <div>
+
+            @foreach (var user in Model)
+            {
+                <h2>@User.Identity.Name</h2>
+            }
+        </div>
+    }
+</div>
