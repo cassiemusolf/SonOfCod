@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Identity;
 using System.Security.Claims;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace SonOfCodSeafood.Controllers
 {
@@ -26,6 +27,30 @@ namespace SonOfCodSeafood.Controllers
         public IActionResult Index()
         {
             return View(_db.Roles.ToList());
+        }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Create(Microsoft.AspNetCore.Http.FormCollection collection)
+        {
+            try
+            {
+                _db.Roles.Add(new IdentityRole()
+                {
+                    Name = collection["RoleName"]
+                });
+                _db.SaveChanges();
+                ViewBag.ResultMessage = "Role created successfully !";
+                return View("Create");
+            }
+            catch
+            {
+                return View();
+            }
         }
     }
 }
