@@ -1,0 +1,47 @@
+﻿@using System.Security.Claims
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <h2>Roles Listing</h2>
+
+    @Html.ActionLink("Create a New Role", "Create") | @Html.ActionLink("Manage User Role", "ManageUserRoles")
+
+    <hr />
+</div>
+@*<div>
+    @foreach (var role in Model)
+    {
+        <p>
+            <strong>@role.Name |</strong>
+            <span onclick="return confirm('Are you sure you want to delete?')"><a href="/Roles/Delete?RoleName=@role.Name" class="delLink" style="color:red;">Delete</a></span>
+            @Html.ActionLink("Edit", "Edit", new { roleName = @role.Name })
+        </p>
+
+    }
+</div>*@
+
+@*@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using System.Security.Claims
+
+<h2>Here is the list of users registered for the newsletter.</h2>
+
+<hr />
+
+@if (Model.Any())
+{
+    @foreach (var user in Model)
+    {
+        <h2>@User.Identity.Name</h2>
+
+    }
+}
+
+<hr />
+@Html.ActionLink("Create new", "Create")*@

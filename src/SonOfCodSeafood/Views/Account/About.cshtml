@@ -3,7 +3,24 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+@model IEnumerable<SonOfCodSeafood.Models.ApplicationUser>
 
 <div class="about-page container">
     <h2>More about Son of Cod Seafood - COMING SOON!!</h2>
+</div>
+
+<h2>@User.Identity.Name</h2>
+
+<div class="users">
+    @if (Model.Any())
+    {
+
+        <div>
+
+            @foreach (var user in Model)
+            {
+                <h2>@User.Identity.Name</h2>
+            }
+        </div>
+    }
 </div>

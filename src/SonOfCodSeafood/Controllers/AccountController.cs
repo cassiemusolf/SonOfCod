@@ -28,7 +28,7 @@ namespace SonOfCodSeafood.Controllers
         }
         public IActionResult About()
         {
-            return View();
+            return View(_db.Users.ToList());
         }
 
         public IActionResult Register()
