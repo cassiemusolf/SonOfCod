@@ -1,5 +1,5 @@
 ﻿body {
-    background-color: pink;
+    background-color: lightgrey;
     margin-top: 10px;
 
 }
@@ -121,11 +121,11 @@
     background-color: #FFF;
 }
 
-.carousel-index {
-    padding-top: 100px;
-    margin-bottom: 100px !important;
-}
-
 .footer {
     margin: 50px;
+}
+
+
+.btn-lg {
+    margin: 15px;
 }
