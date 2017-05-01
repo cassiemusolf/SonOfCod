@@ -9,6 +9,7 @@ namespace SonOfCodSeafood.Models
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public virtual ICollection<Post> Posts { get; set; }
         public ApplicationDbContext()
         {
         }

@@ -1,28 +1,18 @@
-﻿@using System.Security.Claims
-
-@{
+﻿@{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
 <div class="container">
     <h2>Roles Listing</h2>
-
-    @Html.ActionLink("Create a New Role", "Create") | @Html.ActionLink("Manage User Role", "ManageUserRoles")
-
-    <hr />
-</div>
-
-
-
-
-<div>
     @foreach (var role in Model)
     {
-        <p>
-            <strong>@role.Id |</strong>
-            <span onclick="return confirm('Are you sure you want to delete?')"><a href="/Roles/Delete?RoleName=@role.Name" class="delLink" style="color:red;">Delete</a></span>
-            @Html.ActionLink("Edit", "Edit", new { roleName = @role.Name })
-        </p>
-
+        <div>
+            @role.ToString()
+        </div>
     }
+    <hr />
+    <h3>@Html.ActionLink("Create a New Role", "Create", "Roles")</h3>
+
+    <hr />
 </div>

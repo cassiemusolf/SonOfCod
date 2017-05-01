@@ -5,20 +5,10 @@
 
 <div class="container">
     <h2>Create Role</h2>
-    @Html.ActionLink("List Roles", "Index") | @Html.ActionLink("Manage User Role", "ManageUserRoles")
-    <hr />
-    @using (Html.BeginForm())
+    @using (Html.BeginForm("Create", "Roles", FormMethod.Post))
     {
-        @Html.AntiForgeryToken()
-        @Html.ValidationSummary(true)
-
-        <div>
-            Role name
-        </div>
-        <p>
-            @Html.TextBox("RoleName")
-        </p>
-        <input type="submit" value="Save" />
+        @Html.AntiForgeryToken();
+        <label>Role Name: @Html.TextBox("RoleName")</label>
+        <input type="submit" name="submit" value="Add Role" />
     }
-    @ViewBag.ResultMessage
 </div>

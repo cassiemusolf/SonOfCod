@@ -12,33 +12,27 @@ using Microsoft.AspNetCore.Http;
 
 namespace SonOfCodSeafood.Controllers
 {
-    public class RolesController : Controller
+    [Authorize]
+    public class PostsController : Controller
     {
         private readonly ApplicationDbContext _db;
+        private readonly UserManager<ApplicationUser> _userManager;
 
 
-        public RolesController(ApplicationDbContext db)
+        public PostsController(UserManager<ApplicationUser> userManager, ApplicationDbContext db)
         {
+            _userManager = userManager;
             _db = db;
         }
-
         // GET: /<controller>/
         public IActionResult Index()
         {
-            return View(_db.Roles.ToList());
+            return View(_db.Posts.ToList());
         }
 
         public IActionResult Create()
         {
             return View();
         }
-
-        [HttpPost]
-        public IActionResult Create(IFormCollection collection)
-            {
-            _db.Roles.Add(new Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityRole(Request.Form["RoleName"]));
-            _db.SaveChanges();
-            return RedirectToAction("Index");
-            }
-        }
     }
+}
