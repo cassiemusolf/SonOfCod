@@ -8,7 +8,7 @@
     @foreach (var role in Model)
     {
         <div>
-            @role.ToString()
+            @role.ToString() | <a href="/Roles/Edit?RoleName=@role.ToString()">Edit</a>
         </div>
     }
     <hr />

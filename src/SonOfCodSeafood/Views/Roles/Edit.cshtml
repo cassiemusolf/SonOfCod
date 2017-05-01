@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3>Edit the role</h3>
+
+@using (Html.BeginForm("Edit", "Roles", FormMethod.Post))
+{
+    <p>
+        <input type="hidden" value="@ViewData["roleName"]" name="role-name" />
+        <input type="text" name="edit-role" value="@ViewData["roleName"]" />
+    </p>
+    <input type="submit" value="Save" />
+}

@@ -40,5 +40,20 @@ namespace SonOfCodSeafood.Controllers
             _db.SaveChanges();
             return RedirectToAction("Index");
             }
+
+        public IActionResult Edit(string roleName)
+        {
+            ViewData["roleName"] = roleName;
+            return View();
         }
+        [HttpPost]
+        public IActionResult Edit()
+        {
+            var role = _db.Roles.FirstOrDefault(m => m.Name == Request.Form["role-name"]);
+            role.Name = Request.Form["edit-role"];
+            _db.Roles.Update(role);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+    }
     }
