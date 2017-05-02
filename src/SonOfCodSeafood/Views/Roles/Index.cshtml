@@ -12,7 +12,12 @@
         </div>
     }
     <hr />
-    <h3>@Html.ActionLink("Create a New Role", "Create", "Roles")</h3>
-
+    <div>
+        <h3>
+            @Html.ActionLink("Role Management Home", "Index", "Roles")
+            | @Html.ActionLink("Create a Role", "Create", "Roles")
+            | @Html.ActionLink("Assign Roles", "Assign", "Roles")
+        </h3>
+    </div>
     <hr />
 </div>
